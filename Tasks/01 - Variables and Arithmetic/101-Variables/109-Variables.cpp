@@ -4,7 +4,7 @@ int main()
 { // Block opening brace
 
 	char c = 88;				// Character (1 byte)
-	short year = 2023;			// Short integer
+	unsigned short year = 2023;			// Short integer
 	int age = 23;				// Integer
 	long bigNumber = 123456789;	// Long integer
 	long long veryBigNumber = 1LL << 30;	//2^30 - challenge (advanced), why have I put 1LL?
@@ -25,13 +25,13 @@ int main()
 	printf("And then after that, you will be %d\n", ageNextYear);
 
 	//Overflow
-	year = 32767;
+	year = 65536;
 	year = year + 1;
 	printf("year = %d\n", year);
 
 	//Divide
 	age = 50;
-	age = age / 2;
+	age = age / 0;
 	printf("Half of 50 is %d\n", age);
 	 
 	//Divide and remainder
