@@ -14,4 +14,3 @@ int main()
         printf("Loop counter = %d\n", i);
     }
     puts("Done");
-}
